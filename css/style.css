@@ -1,0 +1,78 @@
+ /* nor  */
+body, ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ /* lib  */
+
+ /* cus  */
+
+ .home {
+    background-color: white ;
+  }
+
+  .home .home_left {
+      width: 38%;
+      height: 307px;
+      background-image: url(/portfolio/img/6_23483.jpg_210810/P5.png) ;
+      background-size: cover;
+      background-repeat: no-repeat ;
+      padding-left: 150px;
+      margin: 200px;
+  }
+
+  .home .home_left .text-box {
+      max-width: 560px;
+      height: 100%;
+      position: relative;
+      padding-top: 20px;
+  }
+
+  .home .home_left h1 {
+      font-size: 48px;
+      line-height: 1.5;
+      display: inline-block;
+      color: #ffffff;
+  }
+
+  .home .home_left .sub_tit {
+      position: absolute;
+      top: 220px;
+      left: 10px;
+      font-weight: bold;
+      display: inline-block;
+      color: #ffffff;
+  }
+
+  .home .home_left .hash_tag {}
+  
+  .about_me{
+    background-color: #576F40 ;
+  }
+  
+  .portfolio{
+    background-color: #576F40;
+  }
+  
+  .contact{
+    background-color: white;
+  }
+  
+  .portfolio-slide-2{
+    background-image: url() ;
+    background-repeat: no-repeat; 
+    background-size: cover ;
+    background-position: center;   
+  }
+  
