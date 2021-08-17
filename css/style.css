@@ -18,6 +18,8 @@ a {
 
  /* cus  */
 
+/*  home  */
+
  .home {
     background-color: white ;
   }
@@ -25,7 +27,7 @@ a {
   .home .home_left {
       width: 38%;
       height: 307px;
-      background-image: url(/portfolio/img/6_23483.jpg_210810/P5.png) ;
+      background-image: url(/img/p5.png) ;
       background-size: cover;
       background-repeat: no-repeat ;
       padding-left: 150px;
@@ -46,25 +48,108 @@ a {
       color: #ffffff;
   }
 
-  .home .home_left .sub_tit {
+  .home .home_left .sub_tit li {
       position: absolute;
-      top: 220px;
+      top: 215px;
       left: 10px;
       font-weight: bold;
       display: inline-block;
       color: #ffffff;
+      font-size: 18px;
   }
 
-  .home .home_left .hash_tag {}
-  
-  .about_me{
-    background-color: #576F40 ;
+  .home .home_left .hash_tag ul li {
+    font-weight: bold;
+    font-size: 18px;
+    display: inline-block;
+    line-height: 2.5;
   }
   
+  /*  About me  */
+
+  .about_me {
+    background-color: #576F40 ;
+  }
+
+  .about_me header {}
+
+  .about_me header h1 {
+    text-align: center;
+  }
+
+  .about_me .a_main {
+    width: 100%;
+    height: 800px;
+    display: flex;
+  }
+  .about_me .a_main .a_img {
+    width: 450px;
+    height: 600px;
+    background-color: #999;
+    margin-top: 120px;
+    margin-left: 260px; s
+  }
+  .about_me .a_main .a_text {
+    width: 1000px;
+    height: 680px;
+    margin-top: 50px;
+    margin-left: 50px; 
+    background-image: url(/img/p2.png) ;
+    background-position: center;
+    background-size: 950px 680px;
+    background-repeat: no-repeat;
+    display: flex;
+    position: relative;
+  }
+
+  .about_me .a_main .a_text .tit {
+    padding-left: 150px;
+    padding-top: 100px;
+  }
+
+  .about_me .a_main .a_text .tit ul li {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 3;
+  }
+
+  .about_me .a_main .a_text .tit ul li:nth-child(5) {
+    padding-top: 80px;
+  }
+
+  .about_me .a_main .a_text .contents {
+    padding-left: 50px;
+    padding-top: 100px;
+  }
+
+  .about_me .a_main .a_text .contents ul li {
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 2.5;
+  }
+
+  .about_me .a_main .a_text .contents ul li:nth-child(3),
+  .about_me .a_main .a_text .contents ul li:nth-child(4) {
+    font-size: 20px;
+    line-height: 3;
+  }
+  .about_me .a_main .a_text .skill {
+    border: 1px solid red;
+    position: absolute;
+    top: 500px;
+    left: 150px;
+    width: 650px;
+  }
+  .about_me .a_main .a_text .skill ul li {}
+  
+/*  Portfolio  */
+
   .portfolio{
     background-color: #576F40;
   }
   
+  /*  Contact  */
+
   .contact{
     background-color: white;
   }
