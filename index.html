@@ -8,6 +8,9 @@
     <script src="./js/jquery-1.12.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css"> 
+    <link rel="shortcut icon" href="./img/happy.png">
+    <script src="./js/jquery.easypiechart.min.js"></script>
+
     <script src="./js/common.js"></script>
     <link rel="stylesheet" href="./css/style.css">
     
@@ -19,6 +22,7 @@
         <section class="section home" data-menuanchor="firstSection">
           
           <div class="home_left">
+            <img src="./img/p5.png" alt="홈페인트">
             <div class="text-box">
               <h1>WELCOME TO <br> 한동찬 포트폴리오</h1>
               <div class="sub_tit">
@@ -36,14 +40,16 @@
               </ul>
             </div>
           </div>
-          <div class="home_right"></div>
+          <div class="home_right">
+            <img src="" alt="일러스트">
+          </div>
 
         </section>
 
         <section class="section about_me" data-menuanchor="secondSection">
           <header>
             <h1>About me</h1>
-            <img src="" alt="">
+            <img src="./img/p6.png" alt="사진">
           </header>
 
           <div class="a_main">
@@ -68,12 +74,30 @@
                   </div>
                   <div class="skill">
                     <ul>
-                      <li>HTML</li>
-                      <li>CSS</li>
-                      <li>JS</li>
-                      <li>PS</li>
-                      <li>AI</li>
-                      <li>FIGMA</li>
+                      <li>
+                        <p>HTML</p>
+                        <div class="pie-chart pie_html"></div>
+                      </li>
+                      <li>
+                        <p>CSS</p>
+                        <div class="pie-chart pie_css"></div>
+                      </li>
+                      <li>
+                        <p>JS</p>
+                        <div class="pie-chart pie_js"></div>
+                      </li>
+                      <li>
+                        <p>PS</p>
+                        <div class="pie-chart pie_ps"></div>
+                      </li>
+                      <li>
+                        <p>AI</p>
+                        <div class="pie-chart pie_ai"></div>
+                      </li>
+                      <li>
+                        <p>FIGMA</p>
+                        <div class="pie-chart pie_figma"></div>
+                      </li>
                     </ul>
                   </div>
               </div>
@@ -82,24 +106,90 @@
         </section>
 
         <section class="section portfolio" data-menuanchor="thirdSection">
-          <div class="slide portfolio-slide-1">
-            <div class="text-box">
-              <h1>fullpage.js tutorial</h1>
-              <h3>this is section 02 - 1</h3>
+
+          <div class="slide slide-1">
+            
+            <div class="p_main">
+              <div class="p_img">
+                <img src="./img/OS971A3.png" alt="record284">
+              </div>
+              <a href="https://donkatz.github.io/RECORD-284/" target="_blank" title="새창열림">
+                <img src="./img/direct.png" alt="">
+                <div>홈페이지 <br>바로가기</div>
+              </a>
+              <div class="p_text" style="background-image: url(./img/t-bg.png);">
+                <h1>RECORD 284 리디자인</h1>
+                <h2>ㆍ 디자인 100%</h2>
+                <h2>ㆍ 퍼블리싱 100%</h2>
+                <h2>ㆍ Figma, Ps 사용</h2>
+              </div>
             </div>
           </div>
-          <div class="slide portfolio-slide-2">
-            <div class="text-box">
-              <h1>fullpage.js tutorial</h1>
-              <h3>this is section 02 - 2</h3>
+
+          <div class="slide slide-2">
+            
+            <div class="p_main">
+              <div class="p_img">
+                <img src="./img/OS971A2.png" alt="국립중앙과학관">
+              </div>
+              <a href="https://donkatz.github.io/science/" target="_blank" title="새창열림">
+                <img src="./img/direct.png" alt="">
+                <div>홈페이지 <br>바로가기</div>
+              </a>
+              <div class="p_text" style="background-image: url(./img/t-bg.png);">
+                <h1>국립중앙과학관 모작</h1>
+                <h2>ㆍ 퍼블리싱 100%</h2>
+                <h2>ㆍ 슬라이드 사용</h2>
+                <h2>ㆍ 풀다운메뉴, 파비콘 등 사용</h2>
+              </div>
             </div>
           </div>
+
+          <div class="slide slide-3">
+            
+            <div class="p_main">
+              <div class="p_img">
+                <img src="./img/OS971A1.png" alt="SUBWAY">
+              </div>
+              <a href="https://donkatz.github.io/SUBWAY/" target="_blank" title="새창열림">
+                <img src="./img/direct.png" alt="">
+                <div>홈페이지 <br>바로가기</div>
+              </a>
+              <div class="p_text" style="background-image: url(./img/t-bg.png);">
+                <h1>SUBWAY 모작</h1>
+                <h2>ㆍ 퍼블리싱 100%</h2>
+                <h2>ㆍ 슬라이드, 탭메뉴 사용</h2>
+                <h2>ㆍ 풀다운메뉴, 파비콘 등 사용</h2>
+              </div>
+            </div>
+          </div>
+
         </section>
 
         <section class="section contact" data-menuanchor="fourthSection">
-          <div class="text-box">
-            <h1>fullpage.js tutorial</h1>
-            <h3>this is section 04</h3>
+          <header>
+            <h1>Contact</h1>
+            <img src="./img/p1.png" alt="헤더페인트">
+          </header>
+          <div class="c_main">
+            <div class="c_img">
+              <img src="./img/contact.jpg" alt="내사진">
+            </div>
+            <div class="c_text">
+              <div class="t_img">
+                <img src="./img/e-mail.png" alt="이메일">
+                <img src="./img/phone.png" alt="전화번호">
+                <img src="./img/name.png" alt="카카오톡 아이디">
+                <a href="#"><img src="./img/em.png" alt="이력서 바로가기"></a>
+              </div>
+              <div class="t_contants">
+                <h2>donkatzzz@naver.com</h2>
+                <h2>010-7620-4865</h2>
+                <h2>KAKAO ID : hdchan</h2>
+                <h2><a href="#">이력서 보기</a></h2>
+              </div>
+            </div>
+            <img src="./img/p9.png" alt="테이프">
           </div>
         </section>
         
