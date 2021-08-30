@@ -41,9 +41,18 @@ $(document).ready(function(){
           
         });
 
+        var test01 = '<header><h1>About me</h1><img src="./img/p6.png" alt="사진"></header>'
+
+        $(".about_me").append(test01);
+
         var test = '<header><h1>Portfolio</h1><img src="img/p6.png" alt=""></header>'
 
         $(".portfolio").append(test);
+
+        
+        var test02 = '<header><h1>Contact</h1><img src="img/p1.png" alt=""></header>'
+
+        $(".contact").append(test02);
 
         $('.pie-chart ').easyPieChart({
           barColor: '#FDA53D',  //차트가 그려질 색
