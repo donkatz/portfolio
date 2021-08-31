@@ -2,7 +2,7 @@ $(document).ready(function(){
 
         $("#fullpage").fullpage({
           //options here
-          navigation: true,  // 섹션네비게이션
+          navigation: false,  // 섹션네비게이션
           navigationPosition: 'right', // 섹션네비게이션 의 위치 설정 right / left   
           
           navigationTooltips: [
@@ -17,16 +17,60 @@ $(document).ready(function(){
           
           onLeave: function(origin, destination, direction){
             var leavingSection = this;
+
+            //네이게이션 만들어 지기
+
+
+            if(destination.index == 0 ){
+
+              $(".gnb-wrap > ul > li").eq(0).addClass("active");
+              $(".gnb-wrap > ul > li").eq(0).siblings().removeClass("active");
+              $(".dots").css({
+                "top" : 12.5 + "%",
+              });
+            } else if(destination.index == 1 ){
+
+              $(".gnb-wrap > ul > li").eq(1).addClass("active");
+              $(".gnb-wrap > ul > li").eq(1).siblings().removeClass("active");
+              $(".dots").css({
+                "top" : 37.5 + "%",
+              });
+            } else if(destination.index == 2 ){
+
+              $(".gnb-wrap > ul > li").eq(2).addClass("active");
+              $(".gnb-wrap > ul > li").eq(2).siblings().removeClass("active");
+              $(".dots").css({
+                "top" : 62.5 + "%",
+              });
+            } else if(destination.index == 3 ){
+
+              $(".gnb-wrap > ul > li").eq(3).addClass("active");
+              $(".gnb-wrap > ul > li").eq(3).siblings().removeClass("active");
+              $(".dots").css({
+                "top" : 87.5 + "%",
+              });
+            } 
+            
         
-            //구역 2를 떠난 후
+            //구역 1에 도착하면
+            if(destination.index == 0 ){
+              $(".home").addClass("active")
+            }else if(destination.index == 1 ){
+              $(".home").removeClass("active")
+            } 
+            
+
+            //구역 2에 도착하면..파이그래프
+
+
             if(destination.index == 1 ){
                           
               $('.pie_html').data('easyPieChart').update(-80);
-              $('.pie_css').data('easyPieChart').update(-70);
+              $('.pie_css').data('easyPieChart').update(-80);
               $('.pie_js').data('easyPieChart').update(-60);
-              $('.pie_ps').data('easyPieChart').update(-70);
-              $('.pie_ai').data('easyPieChart').update(-60);
-              $('.pie_figma').data('easyPieChart').update(-80);
+              $('.pie_ps').data('easyPieChart').update(-75);
+              $('.pie_ai').data('easyPieChart').update(-65);
+              $('.pie_figma').data('easyPieChart').update(-85);
 
             } else{
               $('.pie_html').data('easyPieChart').update(0);
@@ -36,9 +80,20 @@ $(document).ready(function(){
               $('.pie_ai').data('easyPieChart').update(0);
               $('.pie_figma').data('easyPieChart').update(0);
             }
-          }
+          },
 
           
+          
+        });
+
+
+        // 누른곳으로 이동하는 것
+        $(".gnb-wrap > ul > li").click(function(){
+
+          var thisIndex = $(this).index();
+
+          fullpage_api.moveTo(thisIndex+1);
+
         });
 
         var test01 = '<header><h1>About me</h1><img src="./img/p6.png" alt="사진"></header>'
@@ -65,6 +120,7 @@ $(document).ready(function(){
           onStart: $.noop,
           onStop: $.noop
       });
+
 
       var typingBool = false;
       var typingIdx;

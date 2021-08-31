@@ -43,6 +43,58 @@ a {
 
  /* cus  */
 
+ .gnb-wrap {
+   position: fixed;
+   right : 0;
+   height: 100%;
+   z-index: 9999999999;
+ }
+
+ .gnb-wrap > ul {
+   height: 100%;
+ }
+
+ .gnb-wrap > ul > li  {
+   height: 25%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #999;
+ }
+
+ .gnb-wrap > ul > li.active {
+  color: black;
+  font-weight: bold;
+ }
+
+ .gnb-wrap > .dots {
+   display: block;
+   content: "";
+   width: 10px;
+   height: 10px;
+   background-color: #FDA53D;
+   position: absolute;
+   top: 12.5%;
+   /* 1번 12.5 */
+   /* 2번 37.5 */
+   /* 3번 62.5 */
+   /* 4번 87.5 */
+   left: 20%;
+   border-radius: 50%;
+   transform: translate(-50%,-50%);
+   box-sizing: border-box;
+   transition: 0.5s;
+ }
+
+ .gnb-wrap > ul > li.active::after {
+   display: block;
+ }
+
+ .gnb-wrap > ul > li > a {
+   display: block;
+   transform: rotate(-90deg);
+ }
+
  /*  home  */
 
 
@@ -50,6 +102,15 @@ a {
     font-family: 'KBIZHanmaumMyungjo';
   }
 
+  .home img {
+    opacity: 0;
+    transition: 0.5s;
+  }
+
+  .home.active img {
+    opacity: 1;
+    transition: 2s;
+  }
   .home .container {
     display: flex;
     flex-direction: row;
@@ -59,9 +120,23 @@ a {
       padding-left: 180px;
       width: 50%;
       position: relative;
-      background-position: center;
-      background-size: contain;
-      background-repeat: no-repeat;
+  }
+
+  .home .home_left .home_img {
+    position: absolute;
+    top: 240px; 
+    left: 20px; 
+    opacity: 0;
+    transition: 0.5s;
+  }
+
+  .home.active .home_left .home_img {
+    opacity: 1;
+    transition: 2s;
+  }
+
+  .home .home_left .home_img > img {
+    width: 780px;
   }
 
   .home .home_left .text-box {
@@ -266,11 +341,29 @@ a {
     display: flex;
   }
  
+  .portfolio .p_main .p_img {
+    position: relative;
+  }
+
   .portfolio .p_main .p_img > img{
     width: 850px;
     height: 650px;
     margin-top: 70px;
-    margin-left: 160px;
+    margin-left: 170px;
+  }
+
+  .portfolio .p_main .p_img .p_img_wrap {
+    position: absolute;
+    top: 197px;
+    left: 314px;
+    background-color: #999;
+    width: 513px;
+    height: 276px;
+    overflow: hidden;
+  }
+
+  .portfolio .p_main .p_img .p_img_wrap > img {
+    width: 100%;
   }
 
   .portfolio .p_main a {
@@ -406,7 +499,7 @@ a {
     border: 0px;
   }
   .portfolio .fp-next {
-    right: 140px;
+    right: 120px;
     background-image: url(../img/right.png);
     width: 80px;
     height: 60px;
