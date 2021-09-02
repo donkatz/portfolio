@@ -352,7 +352,7 @@ a {
     margin-left: 170px;
   }
 
-  .portfolio .p_main .p_img .p_img_wrap {
+  .portfolio .p_main .p_img .p_img_sample {
     position: absolute;
     top: 197px;
     left: 314px;
@@ -360,10 +360,27 @@ a {
     width: 513px;
     height: 276px;
     overflow: hidden;
+    cursor: pointer;
   }
 
-  .portfolio .p_main .p_img .p_img_wrap > img {
+  .portfolio .p_main .p_img .p_img_sample > img {
     width: 100%;
+    transition: 3s;
+  }
+
+  .portfolio .slide-1 .p_main .p_img .p_img_sample:hover > img {
+    transform: translateY(-84%);
+    transition: 10s;
+  }
+
+  .portfolio .slide-2 .p_main .p_img .p_img_sample:hover > img {
+    transform: translateY(-74%);
+    transition: 7s;
+  }
+
+  .portfolio .slide-3 .p_main .p_img .p_img_sample:hover > img {
+    transform: translateY(-55%);
+    transition: 5s;
   }
 
   .portfolio .p_main a {
