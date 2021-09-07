@@ -107,7 +107,7 @@ a {
     transition: 0.5s;
   }
 
-  .home.active img {
+  .home.active2 img {
     opacity: 1;
     transition: 2s;
   }
@@ -130,7 +130,7 @@ a {
     transition: 0.5s;
   }
 
-  .home.active .home_left .home_img {
+  .home.active2 .home_left .home_img {
     opacity: 1;
     transition: 2s;
   }

@@ -52,12 +52,7 @@ $(document).ready(function(){
             } 
             
         
-            //구역 1에 도착하면
-            if(destination.index == 0 ){
-              $(".home").addClass("active")
-            }else if(destination.index == 1 ){
-              $(".home").removeClass("active")
-            } 
+
             
 
             //구역 2에 도착하면..파이그래프
@@ -79,9 +74,22 @@ $(document).ready(function(){
               $('.pie_ps').data('easyPieChart').update(0);
               $('.pie_ai').data('easyPieChart').update(0);
               $('.pie_figma').data('easyPieChart').update(0);
-            }
+            }   
+            
+            
+            
+            //구역 1에 도착하면
+            if(destination.index == 0 ){
+              $(".home").addClass("active2")
+            }else if(destination.index == 1 ){
+              $(".home").removeClass("active2")
+            } 
+
           },
 
+          afterRender: function(){
+            $(".home").addClass("active2")
+          }
           
           
         });
