@@ -383,6 +383,11 @@ a {
     transition: 5s;
   }
 
+  .portfolio .slide-4 .p_main .p_img .p_img_sample:hover > img {
+    transform: translateY(-67.5%);
+    transition: 8s;
+  }
+
   .portfolio .p_main a {
     width: 180px;
     height: 200px;
@@ -424,9 +429,17 @@ a {
     z-index: 10;
   }
 
-  .portfolio .slide-1 .p_main .p_text h1 {
+  .portfolio .slide-2 .p_main .p_text h1 {
     font-size: 34px;
     margin-left: 80px;
+  }
+
+  .portfolio .slide-4 .p_main .p_text h1 {
+    color: #576F40;
+    margin-top: 80px;
+    margin-left: 90px;
+    font-size: 28px;
+    z-index: 10;
   }
 
   .portfolio .p_main .p_text h2 {
