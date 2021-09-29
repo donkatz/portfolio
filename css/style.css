@@ -429,6 +429,10 @@ a {
     z-index: 10;
   }
 
+  .portfolio .slide-1 .p_main .p_text h1 {
+    font-size: 32px;
+  }
+
   .portfolio .slide-2 .p_main .p_text h1 {
     font-size: 34px;
     margin-left: 80px;
@@ -441,6 +445,7 @@ a {
     font-size: 28px;
     z-index: 10;
   }
+  
 
   .portfolio .p_main .p_text h2 {
     font-size: 28px;
