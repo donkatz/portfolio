@@ -307,6 +307,133 @@ a {
     text-align: center;
   }
 
+  /*  디자인 Portfolio */
+
+  .d-portfolio {
+    position: relative;
+  }
+
+  .d-portfolio header{
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .d-portfolio header h1 {
+    text-align: center;
+    padding-left: 13px;
+    font-size: 26px;
+    color: #fff;
+  }
+  .d-portfolio header > img{
+    width: 300px;
+    height: 300px;
+    z-index: -1;
+    position: absolute;
+    left: -100px;
+    top: -113px;
+  }
+
+  .d-portfolio .p_main {
+    width: 100%;
+    height: 800px;
+    display: flex;
+  }
+
+  .d-portfolio .p_main .p_text {
+    width: 50%;
+    padding-top: 140px;
+  }
+
+  .d-portfolio .p_main .p_text h2 {
+    font-size: 28px;
+  }
+  .d-portfolio .p_main .p_text ul {
+    padding-top: 20px;
+  }
+
+  .d-portfolio .p_main .p_text ul li {
+    font-size: 22px;
+    padding-top: 15px;
+  }
+
+  .d-portfolio .p_main .p_text ul li:nth-of-type(2n+1) {
+    font-weight: bold;
+  }
+
+  
+
+/* ... */
+
+.d-portfolio .p_main .p_img {
+  position: relative;
+}
+
+.d-portfolio .p_main .p_img > img{
+  width: 850px;
+  height: 650px;
+  margin-top: 70px;
+  margin-left: 170px;
+}
+  .d-portfolio .p_main .p_img .p_img_sample {
+    position: absolute;
+    top: 197px;
+    left: 314px;
+    background-color: #999;
+    width: 513px;
+    height: 276px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .d-portfolio .p_main .p_img .p_img_sample a > img {
+    width: 100%;
+    transition: 3s;
+  }
+
+  .d-portfolio .slide-1 .p_main .p_img .p_img_sample:hover a > img {
+    transform: translateY(-39.5%);
+    transition: 3s;
+  }
+
+  .d-portfolio .slide-2 .p_main .p_img .p_img_sample:hover a> img {
+    transform: translateY(-62%);
+    transition: 3s;
+  }
+
+  .d-portfolio .slide-3 .p_main .p_img .p_img_sample:hover a> img {
+    transform: translateY(-75.5%);
+    transition: 5s;
+  }
+
+
+ 
+
+
+
+
+  .d-portfolio .fp-prev {
+    left: 50px;
+    background-image: url(../img/right.png);
+    width: 80px;
+    height: 60px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 0px;
+    transform: rotateY(180deg);
+  }
+  .d-portfolio .fp-next {
+    right: 120px;
+    background-image: url(../img/right.png);
+    width: 80px;
+    height: 60px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 0px;
+  }
+
   /*  Portfolio  */
 
   .portfolio {

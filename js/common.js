@@ -44,6 +44,13 @@ $(document).ready(function(){
               });
             } else if(destination.index == 3 ){
 
+              $(".gnb-wrap > ul > li").eq(2).addClass("active");
+              $(".gnb-wrap > ul > li").eq(2).siblings().removeClass("active");
+              $(".dots").css({
+                "top" : 62.5 + "%",
+              });
+            } else if(destination.index == 4 ){
+
               $(".gnb-wrap > ul > li").eq(3).addClass("active");
               $(".gnb-wrap > ul > li").eq(3).siblings().removeClass("active");
               $(".dots").css({
@@ -108,6 +115,7 @@ $(document).ready(function(){
 
         $(".about_me").append(test01);
 
+
         var test = '<header><h1>Portfolio</h1><img src="img/p6.png" alt=""></header>'
 
         $(".portfolio").append(test);
@@ -116,6 +124,12 @@ $(document).ready(function(){
         var test02 = '<header><h1>Contact</h1><img src="img/p1.png" alt=""></header>'
 
         $(".contact").append(test02);
+
+        var test03 = '<header><h1>Design</h1><img src="img/p1.png" alt=""></header>'
+
+        $(".d-portfolio").append(test03);
+
+
 
         $('.pie-chart ').easyPieChart({
           barColor: '#FDA53D',  //차트가 그려질 색
