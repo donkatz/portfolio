@@ -406,6 +406,11 @@ a {
     transition: 5s;
   }
 
+  .d-portfolio .slide-4 .p_main .p_img .p_img_sample:hover a > img {
+    transform: translateY(-65.5%);
+    transition: 5s;
+  }
+
 
  
 
